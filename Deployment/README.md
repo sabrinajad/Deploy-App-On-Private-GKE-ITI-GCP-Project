@@ -1,5 +1,11 @@
 ##  Setup
-* 1- kubectl apply -f  .
-*
-![deploymentIMG](../images/deploy.jpg) 
-* 2- 
+* 1- Use Secret resource to pull image from private container registry 
+
+![img](../images/secret.jpg) 
+* 2- Apply Deployment files
+
+![deploymentIMG](../images/deploy.jpg) * 3- Get Application External Ip 
+
+![img](../images/ip.jpg) 
+
+
