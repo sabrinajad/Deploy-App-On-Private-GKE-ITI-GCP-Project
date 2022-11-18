@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: py-deployment
+  labels:
+    app: python
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python
+  template:
+    metadata:
+      labels:
+        app: python
+    spec:
+      imagePullSecrets:
+        - name: my-secret
+      containers:
+      - name: python
+        image:  gcr.io/sabrinnasr2050/python-application:latest
+        env:
+        - name: REDIS_HOST
+          value: redis
+        - name: REDIS_PORT
+          value: "6379"
+        ports:
+        - containerPort: 80

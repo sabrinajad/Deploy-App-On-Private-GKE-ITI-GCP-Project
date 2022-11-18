@@ -5,8 +5,8 @@ RUN pip install tornado
 RUN pip install redis
 COPY . .
 ENV ENVIRONMENT=DEV
-ENV HOST=localhost
 ENV PORT=8000
+ENV HOST=localhost
 ENV REDIS_HOST=redis
 ENV REDIS_PORT=6379
 ENV REDIS_DB=0
