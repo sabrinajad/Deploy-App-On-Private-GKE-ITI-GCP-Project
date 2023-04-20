@@ -1,5 +1,21 @@
-## Terraform Code to Build Infrastructre on GCP ( Google Cloud Platform )
-* 1- Apply init 
+# Terraform Code to Build Infrastructre on GCP ( Google Cloud Platform )
+### Network:
+* 1 VPC
+* 2 subnets (management subnet & restricted subnet):
+1. Management subnet has the following:
+• NAT gateway
+• Private VM
+2. Restricted subnet has the following:
+• Private standard GKE cluster (private control plan)
+
+### General Notes:
+• Restricted subnet didnt have access to internet.
+• Only the management subnet can connect to the gke cluster.
+• Deployment exposed to public internet with a public HTTP load balancer.
+• I create a custom SA and attach it to my nodes (I didnt use default compute service account while creating the gke cluster).
+
+## Command and steps:
+* 1- Terraform init 
 
 ![img](../images/terra1.jpg)
 * 2- Terraform Apply to build Infra :
