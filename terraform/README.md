@@ -15,15 +15,15 @@
 - I create a custom SA and attach it to my nodes (I didnt use default compute service account while creating the gke cluster).
 
 ## Command and steps:
-* 1- #### Terraform init 
+* 1- Terraform init 
 
 ![img](../images/terra1.jpg)
-* 2- #### Terraform Apply to build Infra :
+* 2- Terraform Apply to build Infra :
 
 ![img](../images/terra2.jpg)
 
-* 3- #### SSH into vm and initialize it with [ gcloud , kubectl , service account ]
+* 3- SSH into vm and initialize it with [ gcloud , kubectl , service account ]
 
-* 4- #### Connect to Cluster :
+* 4- Connect to Cluster :
 
 ![img](../images/terra3.jpg)
