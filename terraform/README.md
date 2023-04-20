@@ -12,6 +12,7 @@
 - Restricted subnet didnt have access to internet.
 - Only the management subnet can connect to the gke cluster.
 - Deployment exposed to public internet with a public HTTP load balancer.
+- The image deployed on GKE come from GCR or Artifacts registry.
 - I create a custom SA and attach it to my nodes (I didnt use default compute service account while creating the gke cluster).
 
 ## Command and steps:
