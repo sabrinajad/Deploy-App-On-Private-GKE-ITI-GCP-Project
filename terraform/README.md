@@ -1,4 +1,4 @@
-# Terraform Code to Build Infrastructre on GCP ( Google Cloud Platform )
+# Terraform Code to Build Infrastructre on GCP( Google Cloud Platform )
 ### Network:
 * 1 VPC
 * 2 subnets (management subnet & restricted subnet):
